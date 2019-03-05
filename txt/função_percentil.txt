@@ -1,0 +1,6 @@
+# Função criada para calcular o percentil
+def percentil(n):
+    def percentil_(x):
+        return np.percentile(x, n)
+    percentil_.__name__ = 'perc_%s' % n
+    return percentil_
